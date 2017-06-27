@@ -1,0 +1,298 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX or LuaLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy_format_Hien}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Hien}{Nguyen}
+{\href{mailto:hiendn451@gmail.com}{hiendn451@gmail.com} | 518-368-2484 | 
+LinkedIn:  \href{https://www.linkedin.com/in/hien-nguyen-5567149a}{\custombold{Hien Nguyen}} |
+GitHub:   \href{https://github.com/nguyenduchien1994}{\custombold{hnguyen}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.325\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\runsubsection{Boston University}\\
+\location{Boston, MA}
+\descript{Master of Science \\ Computer Engineering}
+Graduation December 2018 \\ GPA: 3.50
+\sectionsep
+
+\runsubsection{Union College}\\		
+\location{Schenectady, NY}
+\descript{Bachelor of Science \\ Computer Engineering }
+Graduated - June 2016 \\ GPA: 3.71
+\sectionsep
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\flushleft
+\subsection{Graduate}
+%\textbullet \, Advanced Data Structures \& Algorithms \\
+\textbullet \, Machine Learning \\
+\textbullet \, Advanced Data Structures \\
+\textbullet \, Digital VLSI Circuit Design \\
+\textbullet \, Computer Architecture \\
+%\textbullet \, Vulnerabilities, Defense Systems \& Malware Analysis \\
+\textbullet \, Vulnerabilities, Defense Systems \& Malware Analysis \\
+\sectionsep
+
+\subsection{Undergraduate}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\flushleft
+\textbullet \, Advanced Hardware Systems \\
+\textbullet \, Algorithm Design \& Analysis \\
+\textbullet \, Computer Organization \\
+\textbullet \, Data Communication \& Networks \\
+\textbullet \, Embedded Microcontroller System \\
+\textbullet \, Large-Scale Software Design \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Programming Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Languages}
+\begin{tabular}{lll}
+\custombold{Proficient} & \custombold{Mid} & \custombold{Familiar} \\
+Python & Matlab & C/C++\\
+Java & HTML/CSS & Bash\\
+Javascript & Verilog & CUDA\\
+MIPS & \LaTeX\ & SQL\\ 
+\end{tabular}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TOOLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Software} 
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\begin{tabular}{ll}
+Unix/Linux & Git \\
+Cadence Virtuoso & PyMTL \\
+Cuckoo Sandbox & mitmproxy \\
+PHP & Django \\ 
+jQuery & Bootstrap
+
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Architectures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hardware}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\flushleft
+\textbullet \, RISC-V \\
+\textbullet \, MIPS \\
+\sectionsep
+
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+\runsubsection{\href{http://ascslab.org/index.html}{Adaptive \& Secure Computing Systems}}
+\descript{| Research Assistant }
+\location{Boston University, Boston, MA | September 2016 - Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Working with \custombold{\href{https://www.bu.edu/eng/profile/michel-kinsy/}{Prof. Michel Kinsy}} on computer architecture and system security.
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+\runsubsection{\href{https://www2.ucar.edu/}{UCAR Earth Observing Laboratory}}
+\descript{| Software Engineering Intern }
+\location{Boulder, CO | June 2015 - September 2015}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Designed and developed \custombold{\href{http://datavis.eol.ucar.edu/ncharts/}{Ncharts}}, a multi-device compatible Django web application that constructs real-time scientific representation of a wide variety of data from different projects. \custombold{\href{https://github.com/ncareol/ncharts}{Source}}
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+\runsubsection{\href{https://www.techcombank.com.vn/home}{Techcombank}}
+\descript{| Programming Intern }
+\location{Hanoi, Vietnam | June 2013 - September 2013}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Assisted with web designing, server developing and code debugging. 
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\vspace{-0.5mm} % Hacky fix for awkward extra vertical space 
+\runsubsection{A Perfidy-Aware Protocol for Designing Trustworthy Distributed Systems}
+\location{| January 2017 - Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\justify
+\begin{tightemize}
+\item Proposed a Robust Adaptive Secure Secret Sharing $(\custombold{RASSS})$ protocol for reconstructing secrets and tolerating the maximum number of cheaters in distributed systems. \custombold{\href{https://github.com/nguyenduchien1994/Secret_Sharing/blob/master/Paper/DFT\%20paper.pdf}{Paper}}
+\item Implemented a Python program that instruments RASSS protocol for comparison purposes with the Verilog hardware counterpart. \custombold{\href{https://github.com/nguyenduchien1994/Secret_Sharing}{Source}}
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+\vspace{-0.5mm} % Hacky fix for awkward extra vertical space 
+\runsubsection{Senior Thesis}
+\location{| September 2015 - June 2016 | Advisor: \custombold{\href{https://www.linkedin.com/in/kzhangnyc/}{Kang Zhang}}} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\justify
+\begin{tightemize}
+\item Program the NVIDIA Graphics Processing Unit (GPU) to process and reconstruct biological images for the real-time 3D Optical Coherence Tomography (OCT) technique. 
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+
+\section{Projects}
+\vspace{0.5mm} % Hacky fix for awkward extra vertical space 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\runsubsection{Detecting XSS Vulnerabilities in Google Chrome Extensions}
+\location{| April 2017 - Present}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Developed a Python/Javascript tool that performs a static taint analysis to detect potential XSS vulnerability of a Chrome extension. \custombold{\href{https://github.com/nguyenduchien1994/Chrome-XSS-Vulnerability}{Source}}  
+\item Downloaded 11,866 extensions from Chrome Web Store using a Selenium-based web crawler for testing purposes and successfully detected a significant number of XSS vulnerable extensions.  
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+
+\runsubsection{Defense Mechanisms against Side-Channel Leakage on Web Applications}
+\location{| February 2017 - April 2017}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Demonstrated a potential side-channel attack that exploits the auto-suggestion feature of a high-profile search engine (Yandex) to deduce user's query input. 
+\item Implemented two separate defense mechanisms against this specific side-channel attack using a Chrome browser extension and a Man-In-The-Middle $(\custombold{MITM})$ proxy. \custombold{\href{https://github.com/nguyenduchien1994/Side-channel-Attacks}{Source}}
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+
+
+\runsubsection{Image Segmentation using Network Flow Graph}
+\location{| October 2016 - December 2017}
+\vspace{1mm}
+\justify
+\begin{tightemize}
+\item Developed a Python/C++ tool to cluster the pixels of an image into salient regions using Gaussian Mixture Models clustering and Ford-Fulkerson maximum flow algorithms. \custombold{\href{https://github.com/nguyenduchien1994/Image_Segmentation}{Source}}
+\end{tightemize}
+\vspace{\topsep}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS AND EXTRA-CURRICULARS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Awards and Extra-Curricular}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\vspace{1mm}
+%\justify
+%
+\end{minipage} 
+\end{document}  
+\documentclass[]{article}
