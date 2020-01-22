@@ -43,7 +43,7 @@
 % 2. Hacky space on the first bullet point on the second column.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\hyphenpenalty=100000
 \documentclass[]{deedy_format_Hien}
 
 
@@ -64,8 +64,10 @@
 
 
 \namesection{Hien}{Nguyen}
-{Email: hiendn451@gmail.com | Phone: +1 (518)368-2484 | Linkedin: \href{https://www.linkedin.com/in/hien-nguyen-5567149a}{\custombold{linkedin.com/in/hien-nguyen-5567149a}} | Github: \href{https://github.com/nguyenduchien1994}{\custombold{github.com/nguyenduchien1994}} | Skype: hiendn451
-}
+%{Email: hiendn451@gmail.com | Phone: +1 (518)368-2484 | Linkedin: \href{https://www.linkedin.com/in/hien-nguyen-5567149a}{\custombold{linkedin.com/in/hien-nguyen-5567149a}} | Github: \href{https://github.com/nguyenduchien1994}{\custombold{github.com/nguyenduchien1994}} | Skype: hiendn451
+%}
+%{Email: hiendn451@gmail.com | Phone: +1 (518)368-2484} \\
+{\custombold{Summary}: Results-driven software engineer with extensive experience in web application development and cybersecurity. Experienced in designing enterprise software and collaborating in small- to mid-size engineering teams. Interested in full-stack software engineering and systems development positions.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -76,54 +78,6 @@
 \begin{minipage}[t]{0.325\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Education} 
-\vspace{2mm} % Hacky fix for awkward extra vertical space 
-\runsubsection{Boston University}\\
-\location{Boston, MA}
-\descript{Master of Science \\ Computer Engineering}
-Graduation December 2017 \\ GPA: 3.60
-\sectionsep
-
-\runsubsection{Union College}\\		
-\location{Schenectady, NY}
-\descript{Bachelor of Science \\ Computer Engineering }
-Graduated - June 2016 \\ GPA: 3.71
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Coursework}
-\vspace{2mm} % Hacky fix for awkward extra vertical space 
-\flushleft
-\subsection{Graduate}
-%\textbullet \, Advanced Data Structures \& Algorithms \\
-\vspace{1mm} % Hacky fix for awkward extra vertical space 
-\textbullet \, Cybersecurity \\
-\textbullet \, Machine Learning \\
-\textbullet \, Learning From Data \\
-\textbullet \, Advanced Data Structures \\
-%\textbullet \, Digital VLSI Circuit Design \\
-\textbullet \, Computer Architecture \\
-\textbullet \, Vulnerabilities, Defense Systems \& Malware Analysis \\
-\sectionsep
-
-\subsection{Undergraduate}
-\vspace{1mm} % Hacky fix for awkward extra vertical space 
-\flushleft
-\textbullet \, Advanced Hardware Systems \\
-\textbullet \, Algorithm Design \& Analysis \\
-\textbullet \, Computer Organization \\
-\textbullet \, Data Communication \& Networks \\
-\textbullet \, Embedded Microcontroller System \\
-\textbullet \, Large-Scale Software Design \\
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Programming Languages
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -131,10 +85,10 @@ Graduated - June 2016 \\ GPA: 3.71
 \vspace{2mm} % Hacky fix for awkward extra vertical space 
 \begin{tabular}{lll}
 \custombold{Proficient} & \custombold{Mid} & \custombold{Familiar} \\
-Python & Matlab & Bash\\
-Java & PHP & SQL\\
-Javascript & C/C++ & Ruby\\
-HTML/CSS & \LaTeX\ & Perl\\ 
+Python & Matlab & PHP\\
+Java & JavaScript & SQL\\
+HTML/CSS & C/C++ & Ruby\\
+Bash & \LaTeX\ & Perl\\ 
 \end{tabular}
 \sectionsep
 
@@ -143,6 +97,7 @@ HTML/CSS & \LaTeX\ & Perl\\
 %     TOOLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\vspace{2mm}
 \section{Software} 
 \vspace{2mm} % Hacky fix for awkward extra vertical space 
 \begin{tabular}{ll}
@@ -153,6 +108,105 @@ Google Web Toolkit & Django \\
 Jira & MuleSoft
 
 \end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{2mm}
+\section{Education} 
+\vspace{2mm} % Hacky fix for awkward extra vertical space 
+\runsubsection{Boston University}\\
+\location{Boston, MA}
+\descript{Master of Science \\ Computer Engineering}
+December 2017 \\ GPA: 3.60
+\sectionsep
+
+\runsubsection{Union College}\\		
+\location{Schenectady, NY}
+\descript{Bachelor of Science \\ Computer Engineering }
+June 2016 \\ GPA: 3.71
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\vspace{2mm} % Hacky fix for awkward extra vertical space 
+%\flushleft
+%\subsection{Graduate}
+%\textbullet \, Advanced Data Structures \& Algorithms \\
+%\vspace{1mm} % Hacky fix for awkward extra vertical space 
+%\textbullet \, Cybersecurity \\
+%\textbullet \, Machine Learning \\
+%\textbullet \, Learning From Data \\
+%\textbullet \, Advanced Data Structures \\
+%%\textbullet \, Digital VLSI Circuit Design \\
+%\textbullet \, Computer Architecture \\
+%\textbullet \, Vulnerabilities, Defense Systems \& Malware Analysis \\
+%\sectionsep
+
+%\subsection{Undergraduate}
+%\vspace{1mm} % Hacky fix for awkward extra vertical space 
+%\flushleft
+%\textbullet \, Advanced Hardware Systems \\
+%\textbullet \, Algorithm Design \& Analysis \\
+%\textbullet \, Computer Organization \\
+%\textbullet \, Data Communication \& Networks \\
+%\textbullet \, Embedded Microcontroller System \\
+%\textbullet \, Large-Scale Software Design \\
+%\sectionsep
+
+\section{Coursework}
+\vspace{1mm}
+\flushleft
+\textbullet \, Machine Learning \\
+\textbullet \, Advanced Data Structures \\
+\textbullet \, Computer Architecture \\
+\textbullet \, Large-Scale Software Design \\
+\textbullet \, Cybersecurity \\
+
+\vspace{2mm}
+\section{Contact}
+\vspace{2mm}
+{\custombold{Email}: nguyenduchien1994@gmail.com} \\
+{\custombold{Phone}: +1 (518)368-2484} \\
+%{\custombold{Skype}: hiendn451} \\
+%{\custombold{Github}: \href{https://github.com/nguyenduchien1994}{\custombold{github.com/nguyenduchien1994}}} \\ 
+%{\custombold{Linkedin}: \href{https://www.linkedin.com/in/hien-nguyen-5567149a}{\custombold{linkedin.com/in/hien-nguyen-5567149a}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Programming Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Languages}
+%\vspace{2mm} % Hacky fix for awkward extra vertical space 
+%\begin{tabular}{lll}
+%\custombold{Proficient} & \custombold{Mid} & \custombold{Familiar} \\
+%Python & Matlab & PHP\\
+%Java & JavaScript & SQL\\
+%HTML/CSS & C/C++ & Ruby\\
+%Bash & \LaTeX\ & Perl\\ 
+%\end{tabular}
+%\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TOOLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Software} 
+%\vspace{2mm} % Hacky fix for awkward extra vertical space 
+%\begin{tabular}{ll}
+%Unix/Linux & Git/Github \\
+%Idea Intellij & IBM Clearcase \\
+%Microsoft Azure & AWS \\
+%Google Web Toolkit & Django \\ 
+%Jira & MuleSoft
+
+%\end{tabular}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -182,12 +236,15 @@ Jira & MuleSoft
 \section{Experience}
 \runsubsection{\href{https://jda.com/}{JDA Software}}
 \descript{| Full Stack Software Engineer}
-\location{Boston, MA | March 2018 - Present}
+\location{Boston, MA | March 2018 - January 2020}
 \vspace{5mm}
 \justify
 \begin{tightemize}
-\item Develop codebase for various projects including a rich internet application (RIA) for transportation management and a desktop application for logistics solutions modeler.  
-\item Partake in cloud-based projects using Azure and responsible for the security enhancement of JDA transportation management and modeler software.  
+\item Developed codebase for enterprise software including a rich internet application for Transportation Management Smartbench (TMS) that boosts a retailer's productivity via data visibility and synchronization across their networks.
+\item Designed a real-time load carrier tracking system to assist retailers in accurately delivering products, resulting in substantial customer satisfaction across multiple platforms including Google, Baidu, PC Miller and Verizon maps API. 
+\item Implemented a row-based coloring scheme that enables TMS users to efficiently filter miscellaneous data entries using logical operations. 
+\item Partook in Azure projects to transform JDA into a full-fledged SaaS company.  
+\item Facilitated the security enhancement of JDA data encryption scheme including an extensive upgrade from DES to AES encryption using Java and C++.
 \end{tightemize}
 \vspace{\topsep}
 \sectionsep
@@ -198,7 +255,9 @@ Jira & MuleSoft
 \vspace{1mm}
 \justify
 \begin{tightemize}
-\item Worked with \custombold{\href{https://www.bu.edu/eng/profile/michel-kinsy/}{Prof. Michel Kinsy}} on computer architecture and system security.
+%\item Worked with \custombold{\href{https://www.bu.edu/eng/profile/michel-kinsy/}{Prof. Michel Kinsy}} on computer architecture and system security.
+\item Proposed a Robust Adaptive Secure Secret Sharing (\custombold{\href{https://par.nsf.gov/servlets/purl/10065460}{RASSS}}) protocol for reconstructing secrets and tolerating maximal number of untrusted participants in distributed systems.
+\item Implemented a Python program that instruments RASSS protocol for comparison purposes with the Verilog hardware counterpart.
 \end{tightemize}
 \vspace{\topsep}
 \sectionsep
@@ -209,7 +268,7 @@ Jira & MuleSoft
 \vspace{1mm}
 \justify
 \begin{tightemize}
-\item Designed and developed \custombold{\href{https://github.com/ncareol/ncharts}{source}} code for \custombold{\href{http://datavis.eol.ucar.edu/ncharts/}{Ncharts}}, a multi-device compatible Django web application that constructs real-time scientific representation of a wide variety of data from different projects.
+\item Designed and developed \custombold{\href{https://github.com/ncareol/ncharts}{source}} code for \custombold{\href{http://datavis.eol.ucar.edu/ncharts/}{Ncharts}}, a multi-device compatible Django web application that constructs real-time scientific representations of wide varieties of data from different projects.
 \end{tightemize}
 \vspace{\topsep}
 \sectionsep
@@ -219,18 +278,18 @@ Jira & MuleSoft
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\vspace{-2mm} % Hacky fix for awkward extra vertical space 
-\section{Research}
-\runsubsection{\custombold{\href{https://github.com/nguyenduchien1994/Secret_Sharing}{A Perfidy-Aware Protocol for Designing Trustworthy Distributed Systems}}}
-\location{| January 2017 - January 2018}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\vspace{-2.5mm}
-\justify
-\begin{tightemize}
-\item Proposed a Robust Adaptive Secure Secret Sharing (\custombold{\href{https://github.com/nguyenduchien1994/Secret_Sharing/blob/master/Paper/DFT\%20paper.pdf}{RASSS}}) protocol for reconstructing secrets and tolerating maximal number of untrusted participants in distributed systems.
-\item Implemented a Python program that instruments RASSS protocol for comparison purposes with the Verilog hardware counterpart.
-\end{tightemize}
-\vspace{\topsep}
-\sectionsep
+%\section{Research}
+%\runsubsection{\custombold{\href{https://par.nsf.gov/biblio/10065460-rasss-perfidy-aware-protocol-designing-trustworthy-distributed-systems}{A Perfidy-Aware Protocol for Designing Trustworthy Distributed Systems}}}
+%\location{| January 2017 - January 2018}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\vspace{-2.5mm}
+%\justify
+%\begin{tightemize}
+%\item Proposed a Robust Adaptive Secure Secret Sharing (\custombold{\href{https://par.nsf.gov/servlets/purl/10065460}{RASSS}}) protocol for reconstructing secrets and tolerating maximal number of untrusted participants in distributed systems.
+%\item Implemented a Python program that instruments RASSS protocol for comparison purposes with the Verilog hardware counterpart.
+%\end{tightemize}
+%\vspace{\topsep}
+%\sectionsep
 
 %\vspace{-1mm} % Hacky fix for awkward extra vertical space 
 %\runsubsection{Senior Thesis}
@@ -254,35 +313,44 @@ Jira & MuleSoft
 \vspace{1mm}
 \justify
 \begin{tightemize}
-\item Managing \custombold{\href{https://vnpn.co/}{VNPN.co}}, a social network that connects Vietnamese professionals in America, providing a platform for exchanging business and career development resources. 
-\item Developing the webpage using Node.js and maintaining a database of 2,000 members using MongoDB.
+\item Manage \custombold{\href{https://vnpn.co/}{VNPN.co}}, a social network that connects Vietnamese professionals in America and provides a platform for sharing career development resources. 
+\item Develop the webpage using Node.js and maintain a database of 2,000 members using MongoDB.
 \end{tightemize}
 \vspace{\topsep}
 \sectionsep
 
+%\runsubsection{\custombold{\href{https://par.nsf.gov/biblio/10065460-rasss-perfidy-aware-protocol-designing-trustworthy-distributed-systems}{A Perfidy-Aware Protocol for Designing Trustworthy Distributed Systems}}}
+%\location{| January 2017 - January 2018}
+%\vspace{1mm} % Hacky fix for awkward extra vertical space
+%\justify
+%\begin{tightemize}
+%\item Proposed a Robust Adaptive Secure Secret Sharing (\custombold{\href{https://par.nsf.gov/servlets/purl/10065460}{RASSS}}) protocol for reconstructing secrets and tolerating maximal number of untrusted participants in distributed systems.
+%\item Implemented a Python program that instruments RASSS protocol for comparison purposes with the Verilog hardware counterpart.
+%\end{tightemize}
+%\vspace{\topsep}
+%\sectionsep
+
 \runsubsection{\custombold{\href{https://github.com/nguyenduchien1994/Chrome-XSS-Vulnerability}{Detecting XSS Vulnerabilities in Google Chrome Extensions}}}
-\location{| April 2017 - June 2017}
+\location{| April 2017 - August 2017}
 \vspace{1mm}
 \justify
 \begin{tightemize}
-\item Developed a Python/Javascript tool that performs a static taint analysis to detect potential XSS vulnerability of a Chrome extension. 
+\item Developed a Python/Javascript tool that performs a static taint analysis to detect potential XSS vulnerabilities of a Chrome extension. 
 \item Downloaded 11,866 extensions from Chrome Web Store using a Selenium-based web crawler for testing purposes and successfully detected a significant number of XSS vulnerable extensions.  
 \end{tightemize}
 \vspace{\topsep}
 \sectionsep
 
-
 \runsubsection{\custombold{\href{https://github.com/nguyenduchien1994/Side-channel-Attacks}{Defense Mechanisms against Side-Channel Leakage on Web Applications}}}
-\location{| February 2017 - April 2017}
+\location{| February 2017 - June 2017}
 \vspace{1mm}
 \justify
 \begin{tightemize}
 \item Demonstrated a potential side-channel attack that exploits the auto-suggestion feature of a high-profile search engine (Yandex) to deduce user's query input. 
-\item Implemented two separate defense mechanisms against this specific side-channel attack using a Chrome browser extension and a Man-In-The-Middle $(\custombold{MITM})$ proxy. 
+\item Implemented defense mechanisms against this specific side-channel attack using a Chrome browser extension and a Man-In-The-Middle $(\custombold{MITM})$ proxy. 
 \end{tightemize}
 \vspace{\topsep}
 \sectionsep
-
 
 %\runsubsection{\custombold{\href{https://github.com/nguyenduchien1994/Image_Segmentation}{Image Segmentation using Network Flow Graph}}}
 %\location{| October 2016 - December 2017}
